@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Table - The Gourmet Spot</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="res.css">
+</head>
+
+<body>
+     <div class="main-bg">
+    <div class="hero">
+    <nav class="navbar">
+  <div class="navbar-container">
+
+    <div class="logo">
+      <img src="../image/logo.png" alt="Logo">
+      <span>Sol y Sazon</span>
+    </div>
+
+   <div class="nav_items">
+                    <div class="items">
+                        <a href="../home/home.html" class="nav-link">Home</a>
+                        <a href="../menu/menu.html" class="nav-link">Menu</a>
+                        <a href="../res/res.html" class="nav-link">Reservation</a>  
+                        <a href="../user/user.html" class="nav-link">Profile</a>
+                        <a href="../login/login.html" class="nav-link">login</a>
+                        
+                    </div>
+                </div>
+
+</nav>
+    </div>
+    <div class="reservation-container">
+        <header class="header">
+            <h1>Book Your Experience</h1>
+            <p>Reserve a table at The Gourmet Spot and enjoy fine dining.</p>
+        </header>
+
+       <form id="reservationForm">
+
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="guests">Number of Guests (1-10)</label>
+                <input type="number" id="guests" name="guests" min="1" max="10" required>
+            </div>
+
+         
+            <div class="row">
+                <div class="input-group half">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="input-group half">
+                    <label for="time">Time</label>
+                    <select id="time" name="time" required>
+                        <option value="" disabled selected>Select a time slot</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="input-group">
+                <label for="requests">Special Requests (Optional)</label>
+                <textarea id="requests" name="requests" rows="3" placeholder="Allergies, seating preference..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Confirm Reservation</button>
+        </form>
+
+        <div id="messageBox" class="message-box"></div>
+    </div>
+</div>
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h4>Address</h4>
+            <p>6th of October City, near Mall of Egypt, El Wahat Road</p>
+        </div>
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <p>Email: <a href="mailto:sol.y.sazon1@gmail.com">sol.y.sazon1@gmail.com</a></p>
+            <p>Phone: <a href="tel:+201054637891">01054637891</a></p>
+        </div>
+        <div class="footer-column">
+            <h4>Follow Us</h4>
+            <p>
+                <a href="#">Instagram</a> | 
+                <a href="#">Facebook</a> | 
+                <a href="#">Snapchat</a>
+            </p>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Sol y Sazon. All Rights Reserved.</p>
+</footer>
+
+
+    <script src="res.js"></script>
+</body>
+</html>

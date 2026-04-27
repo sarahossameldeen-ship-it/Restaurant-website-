@@ -1,0 +1,262 @@
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://media.istockphoto.com/id/2161343098/photo/modern-restaurant-interior-with-an-industrial-style-and-luxurious-furniture.jpg?s=612x612&w=0&k=20&c=cFc9YDxm9uDEg1fMSSENNEhQumFnzciaeOvCUVEHgOA=') 
+                no-repeat center center / cover;
+}
+
+
+.main-bg {
+    min-height: calc(100vh - 200px); 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+                url('https://media.istockphoto.com/id/2161343098/photo/modern-restaurant-interior-with-an-industrial-style-and-luxurious-furniture.jpg?s=612x612&w=0&k=20&c=cFc9YDxm9uDEg1fMSSENNEhQumFnzciaeOvCUVEHgOA=') 
+                no-repeat center center / cover;
+}
+
+.navbar {
+    background-color: lch(22.07% 54.81 37.05);
+    padding: 1rem 2.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    z-index: 50;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logo span {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f8f1eb;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.nav_items .items {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.nav-link {
+    color: #f8f1eb;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.3s;
+    text-decoration: none;
+    padding: 6px 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: white;
+    letter-spacing: 0.1em;
+    background-color: rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.btn {
+    background-color: white;
+    color: lch(22.07% 54.81 37.05);
+    padding: 10px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn:hover {
+    background-color: #ffdcdc;
+    color: #750b0b;
+}
+
+#menu_btn {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .nav_items { display: none; }
+    #menu_btn {
+        display: block;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.reservation-container {
+    width: 85%;
+    max-width: 870px;
+    background: #f8f1eb;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    color: #570101;
+    margin-top: 150px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.header p {
+    color: lch(22.07% 54.81 37.05);
+    margin-top: 8px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.15);
+    color: #4d4a4a;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #525252;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #ff4d4d;
+    outline: none;
+    background: rgba(255, 255, 255, 0.25);
+    color: #555252;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+}
+
+.half {
+    flex: 1;
+}
+
+.submit-btn {
+    width: 100%;
+    background: lch(22.07% 54.81 37.05);
+    color: white;
+    padding: 14px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #8d1313;
+}
+
+.message-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+}
+
+
+/* --- Footer --- */
+.site-footer {
+    background: lch(22.07% 54.81 37.05);
+    color: #f8f1eb;
+    padding: 40px 20px 20px 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #f8f1eb;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+
+@media (max-width: 600px) {
+  .footer-container { padding: 0 12px; }
+  .footer-column { flex-basis: 100%; }
+}

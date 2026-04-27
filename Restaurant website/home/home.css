@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', serif;
+    background-color: #f8f1eb; 
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 4px 6px -1px rgba(12, 12, 12, 0.1);
+}
+
+.navbar {
+    background-color: lch(22.07% 54.81 37.05);
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+}
+
+.navbar-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo span {
+  color: #f8f1eb;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+
+.nav_items .items {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.nav-link {
+    color: #f8f1eb;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.3s ease;
+    padding: 6px 0;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: white;
+    letter-spacing: 0.1em;
+    background-color: rgba(255,255,255,0.12);
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.btn {
+    background-color: white;
+    color: lch(22.07% 54.81 37.05);
+    padding: 10px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f8f1eb;
+    color: #750b0b;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/2196163507/photo/elegant-dining-setup-with-candles-at-night-in-a-stylish-restaurant.jpg?s=612x612&w=0&k=20&c=1nA14KGZSY31fuBf3JDxI1lKPr7g49DKfsNOdfPgC0Y=");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero::before {
+   content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4); 
+    top: 0;
+    left: 0;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-hero {
+    background: lch(22.07% 54.81 37.05);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-hero:hover {
+    background: #f8f1eb;
+    color: lch(22.07% 54.81 37.05);
+}
+
+.intro-section, .video-section, .about-cards-section {
+    padding: 4rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd9d9;  
+}
+
+
+.intro-section, 
+.video-section, 
+.about-cards-section {
+    max-width: 1100px;
+    margin: 50px auto; 
+    padding: 50px 20px;
+    color: lch(22.07% 54.81 37.05);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+
+.intro-section {
+    background: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(8px);       
+    border-radius: 15px;
+    padding: 60px 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px #630a0a58; 
+}
+
+.intro-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: lch(22.07% 54.81 37.05); 
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: lch(22.07% 54.81 37.05);
+}
+
+.video-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.video-section h3 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: lch(22.07% 54.81 37.05);
+}
+
+.video-container {
+    width: 1000px;       
+    height: 570px;        
+    margin: 0 auto;       
+    overflow: hidden;      
+    border-radius: 12px;   
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     
+    display: block;
+}
+
+
+.about-section {
+    padding: 60px 20px;
+    background: transparent;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.8rem;
+    color: #751010;
+    margin-bottom: 50px;
+}
+
+.about-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 30px 25px;
+    width: 320px;
+    text-align: left;
+    box-shadow: 0 10px 25px #630a0a58;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #d44a4a;
+}
+
+.about-card h4 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color:  lch(22.07% 54.81 37.05);
+}
+
+.about-card p {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #751010;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-link {
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #d44a4a;
+}
+
+.social-link:hover {
+    color: #751010;
+}
+
+@media (max-width: 768px) {
+    .about-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card {
+        width: 90%;
+    }
+}
+
+
+.gallery-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: lch(22.07% 54.81 37.05);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.site-footer {
+    background: lch(22.07% 54.81 37.05);
+    color: #f8f1eb;
+    padding: 40px 20px 20px 20px;
+    font-family: Georgia, 'Times New Roman', serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 20px auto;
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    color: #f8f1eb;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-cards-container, .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-card, .gallery-item img {
+        width: 90%;
+    }
+}
+
+#what-is {
+    scroll-margin-top: 120px; /* height of your navbar + some spacing */
+}
+
+.hidden {
+    display: none;
+}
+
+.no-scroll {
+        overflow: hidden;
+        height: 100vh;
+    }
